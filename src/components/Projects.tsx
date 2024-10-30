@@ -1,10 +1,10 @@
-"use client";
-
-import { Box, Grid, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { Box,  } from "@mui/material";
+import React from "react";
 import styles from "../app/page.module.css";
 import Code from "./Code";
+import AnimationLottie from "./AnimationLottie";
 
+import lottieFile from '../../public/js.json'
 const Projects = () => {
   const projects = [
     {
@@ -115,6 +115,7 @@ const Projects = () => {
           ))}
         </Box>
       </Box>
+        <AnimationLottie animationPath={lottieFile} width={'25rem'}/>
     </Box>
   );
 };

@@ -17,6 +17,7 @@
     "axios": "^1.7.7",
     "framer-motion": "^11.11.10",
     "iconify": "^1.4.0",
+    "lottie-react": "^2.4.0",
     "next": "15.0.1",
     "nodemailer": "^6.9.16",
     "react": "19.0.0-rc-69d4b800-20241021",

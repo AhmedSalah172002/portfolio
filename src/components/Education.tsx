@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
-
 import styles from "../app/page.module.css";
-import Image from "next/image";
 import Code from "./Code";
+import AnimationLottie from "./AnimationLottie";
+
+import lottieFile from '../../public/study.json'
 const Education = () => {
   const tools: string[] = [
     "Data Structures",
@@ -40,14 +41,7 @@ const Education = () => {
         justifyContent="center"
       >
         <Grid item xs={12} lg={6}>
-          <Image
-            className={styles.experienceImage}
-            src="/experience.gif"
-            alt="experience"
-            width={500}
-            height={500}
-            style={{ display: "block", margin: "auto", borderRadius: "15px" }}
-          />
+        <AnimationLottie animationPath={lottieFile} width={'25rem'}/>
         </Grid>
         <Grid item xs={12} lg={6}>
           <Code

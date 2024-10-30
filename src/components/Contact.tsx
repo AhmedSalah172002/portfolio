@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Box, Typography, IconButton, Divider, Stack } from "@mui/material";
+import { Box, Typography, IconButton, Stack } from "@mui/material";
 import {
   GitHub as GitHubIcon,
   LinkedIn as LinkedInIcon,
@@ -11,7 +11,8 @@ import {
 } from "@mui/icons-material";
 import ContactForm from "./ContactForm";
 import styles from "../app/page.module.css";
-
+import lottieFile from '../../public/contact.json'
+import AnimationLottie from "./AnimationLottie";
 function ContactSection() {
   return (
     <Box
@@ -40,7 +41,9 @@ function ContactSection() {
         alignItems="center"
       >
         <ContactForm />
-        <Box width={{ lg: "75%" }}>
+        <Box sx={{display:'flex', justifyContent:'space-between', flexWrap:'wrap',alignItems:'center'}}>
+            <Box>
+
           <Stack spacing={3}>
             <Stack direction="row" alignItems="center" spacing={2}>
               <IconButton
@@ -78,7 +81,7 @@ function ContactSection() {
               >
                 <LocationOnIcon sx={{ color: "gray.800" }} />
               </IconButton>
-              <Typography variant="body1">Menoufia, Egypt</Typography>
+              <Typography variant="body1">Shibin Elkom ,Menoufia, Egypt</Typography>
             </Stack>
           </Stack>
           <Stack direction="row" spacing={3} mt={8}>
@@ -134,6 +137,9 @@ function ContactSection() {
               </IconButton>
             </Link>
           </Stack>
+            </Box>
+            <AnimationLottie animationPath={lottieFile} width={'20rem'}/>
+
         </Box>
       </Box>
     </Box>

@@ -1,16 +1,15 @@
 import Link from "next/link";
-import { Box, Typography, Divider, Stack, IconButton } from "@mui/material";
-import { CgGitFork } from "react-icons/cg";
+import { Box, Typography, Stack, IconButton } from "@mui/material";
 import { IoStar } from "react-icons/io5";
 
 function Footer() {
   return (
     <Box
-    sx={{
+      sx={{
         backgroundColor: "#0d1224",
         color: "#d3d8e8",
         px: { xs: "1.5rem", sm: "2rem", md: "2.5rem", lg: "3rem" },
-        py:  "2rem" ,
+        py: "2rem",
         marginTop: { xs: "1.5rem", sm: "1.5rem", md: "2rem", lg: "3rem" },
       }}
       component="footer"
@@ -40,7 +39,7 @@ function Footer() {
           </Typography>
           <Stack direction="row" spacing={2} mt={{ xs: 2, md: 0 }}>
             <Link
-              href="https://github.com/said7388/developer-portfolio"
+              href="https://github.com/AhmedSalah172002/portfolio.git"
               target="_blank"
               style={{ textDecoration: "none", color: "inherit" }}
             >
@@ -54,23 +53,6 @@ function Footer() {
                 sx={{ textTransform: "uppercase", fontWeight: "bold" }}
               >
                 Star
-              </Typography>
-            </Link>
-            <Link
-              href="https://github.com/said7388/developer-portfolio/fork"
-              target="_blank"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <IconButton
-                sx={{ color: "inherit", "&:hover": { color: "#16f2b3" } }}
-              >
-                <CgGitFork />
-              </IconButton>
-              <Typography
-                variant="button"
-                sx={{ textTransform: "uppercase", fontWeight: "bold" }}
-              >
-                Fork
               </Typography>
             </Link>
           </Stack>
