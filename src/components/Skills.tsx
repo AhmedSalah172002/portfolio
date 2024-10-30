@@ -1,11 +1,11 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, } from "@mui/material";
 import React from "react";
 import styles from "../app/page.module.css";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
 const Skills = () => {
-  const skills: any[] = [
+  const skills: [{name:string,src:string}] = [
     { name: "AWS", src: "aws" },
     { name: "Bootstrap", src: "bootstrap" },
     { name: "Canva", src: "canva" },

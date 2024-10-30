@@ -95,6 +95,7 @@ const Projects = () => {
         >
           {projects?.map((project, index) => (
             <Box
+            key={index}
               sx={{
                 width: {
                   xs: "100%",
