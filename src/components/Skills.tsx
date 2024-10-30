@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
 const Skills = () => {
-  const skills: [{name:string,src:string}] = [
+  const skills: {name:string,src:string}[] = [
     { name: "AWS", src: "aws" },
     { name: "Bootstrap", src: "bootstrap" },
     { name: "Canva", src: "canva" },
