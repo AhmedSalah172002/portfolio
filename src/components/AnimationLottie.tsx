@@ -6,7 +6,7 @@ interface AnimationLottieProps {
   width: number | string; // Define width as a number or string
 }
 
-const AnimationLottie: React.FC<AnimationLottieProps> = ({ animationPath, width }:{animationPath:any, width:string}) => {
+const AnimationLottie= ({ animationPath, width }:{animationPath:any, width:string}) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,

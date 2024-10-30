@@ -60,6 +60,12 @@ a {
 .css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input,
 .css-113d811-MuiFormLabel-root-MuiInputLabel-root,
 .css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root,
-.css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input {
+.css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input,
+.css-xhkvgb,
+.css-s63k3s,
+.css-160rfsr {
   color: white !important;
+}
+.page_icon__AYuK3 {
+  fontsize: 3rem !important;
 }
