@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap");
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-geist-sans: "Geist Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #0d1224;
+  --hr-line-offset: 25%;
+  --hr-color: rgb(53 46 96);
+}
+:root hr {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    transparent,
+    var(--hr-color) calc(50% - var(--hr-line-offset)),
+    var(--hr-color) calc(50% + var(--hr-line-offset)),
+    transparent
+  );
+}
+body {
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), "Inter Tight", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+.css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input,
+.css-113d811-MuiFormLabel-root-MuiInputLabel-root,
+.css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root,
+.css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input {
+  color: white !important;
+}
