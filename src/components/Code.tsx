@@ -30,11 +30,20 @@ const Code = ({
           <div style={{ backgroundColor: "rgb(251 146 60)" }}></div>
           <div style={{ backgroundColor: "rgb(187 247 208)" }}></div>
         </div>
-        <p style={{textAlign:'center', color: 'rgb(34 211 238)',fontSize:'1.2rem', width:'100%'}}>{title}</p>
+        <p
+          style={{
+            textAlign: "center",
+            color: "rgb(34 211 238)",
+            fontSize: "1.2rem",
+            width: "100%",
+          }}
+        >
+          {title}
+        </p>
       </Box>
       <Box
         sx={{
-          minHeight:'330px',
+          minHeight: "400px",
           borderRadius: " 0px 0px 8px 8px",
           backgroundImage: "linear-gradient(to right,#0d1224, #0a0d37)",
           padding: "25px",
@@ -73,8 +82,8 @@ const Code = ({
         >
           tools :<span style={{ color: "rgb(156 163 175)" }}>{"["}</span>
           {tools?.map((tool, index) => (
-            <>
-              <span key={index}>
+            <React.Fragment key={index}>
+              <span>
                 <span style={{ color: "rgb(156 163 175)" }}>'</span>
                 <span style={{ color: "rgb(252 211 77)" }}> {tool} </span>
                 <span style={{ color: "rgb(156 163 175)" }}>'</span>
@@ -82,7 +91,7 @@ const Code = ({
               {index + 1 < tools.length && (
                 <span style={{ color: "rgb(156 163 175)" }}>,</span>
               )}
-            </>
+            </React.Fragment>
           ))}
           <span style={{ color: "rgb(156 163 175)" }}>{"]"}</span>
           <span style={{ color: "rgb(156 163 175)" }}>,</span>
@@ -95,7 +104,10 @@ const Code = ({
 
         <div style={{ display: "flex", gap: "10px", marginLeft: "25px" }}>
           <span>
-            Description :<span style={{ color: "rgb(34 211 238)",margin:'0px 5px' }}>{description} </span>
+            Description :
+            <span style={{ color: "rgb(34 211 238)", margin: "0px 5px" }}>
+              {description}{" "}
+            </span>
             <span style={{ color: "rgb(156 163 175)" }}>,</span>
           </span>
         </div>
