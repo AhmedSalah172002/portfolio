@@ -89,6 +89,18 @@ const Editor = () => {
           <span style={{ color: "rgb(156 163 175)" }}>,</span>{" "}
           <span>
             <span style={{ color: "rgb(156 163 175)" }}>'</span>
+            <span style={{ color: "rgb(252 211 77)" }}> Laravel </span>
+            <span style={{ color: "rgb(156 163 175)" }}>'</span>
+          </span>
+          <span style={{ color: "rgb(156 163 175)" }}>,</span>{" "}
+          <span>
+            <span style={{ color: "rgb(156 163 175)" }}>'</span>
+            <span style={{ color: "rgb(252 211 77)" }}> Paython </span>
+            <span style={{ color: "rgb(156 163 175)" }}>'</span>
+          </span>
+          <span style={{ color: "rgb(156 163 175)" }}>,</span>{" "}
+          <span>
+            <span style={{ color: "rgb(156 163 175)" }}>'</span>
             <span style={{ color: "rgb(252 211 77)" }}> MySql </span>
             <span style={{ color: "rgb(156 163 175)" }}>'</span>
           </span>
