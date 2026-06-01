@@ -8,6 +8,21 @@ import lottieFile from '../../public/js.json'
 const Projects = () => {
   const projects = [
     {
+      title: "Shafie App",
+      tools: [
+      "Laravel",
+      "MySQL",
+      "Flutter",
+      "Agora",
+      "REST API",
+      "Firebase",
+      "Clean Architecture"
+      ],
+      role: "Backend Developer",
+      description:
+      "Engineered the backend of a Quran memorization platform that supports audio streaming, daily revision tracking, live recitation sessions, and instructor-based evaluations. Built scalable RESTful APIs using Laravel and MySQL, integrated Agora for real-time voice communication, and followed Clean Architecture principles to improve maintainability and support future feature expansion.",
+    },
+    {
       title: "Electronic Auction",
       tools: [
         "Express",
@@ -22,6 +37,36 @@ const Projects = () => {
       role: "Fullstack Developer",
       description:
         "Engineered an electronic auction platform allowing users to showcase products, place automated bids, and receive real-time bid notifications—boosting bid engagement by 50%. Integrated Stripe for secure payments and automated Facebook posting, which enhanced platform visibility by 30% and achieved a 90% user satisfaction rate.",
+    },
+    {
+      title: "Maeda App",
+      tools: [
+        "Express",
+        "MongoDB",
+        "Flutter",
+        "Google Maps API",
+        "Firebase",
+        "Push Notifications",
+        "REST API"
+      ],
+      role: "Backend Developer",
+      description:
+        "Engineered the backend of a Ramadan charity platform enabling users to discover, contribute, and manage charity table locations across Egypt. Implemented geolocation-based search, interactive map integration, charity table verification workflows, and Azkar notification services. Designed maintainable RESTful APIs and optimized data management to support a seamless user experience during high seasonal traffic.",
+    },
+    {
+      title: "Revo Pharmacy App",
+      tools: [
+        "Laravel",
+        "MySQL",
+        "Flutter",
+        "Firebase",
+        "AWS S3",
+        "Stripe",
+        "REST API"
+      ],
+      role: "Backend Developer",
+      description:
+        "Engineered a scalable pharmacy e-commerce backend supporting product management, secure online payments, real-time customer communication, and automated notifications. Built and optimized REST APIs consumed by Flutter applications, integrated AWS S3 for media storage and Stripe for payment processing, and contributed to a high-performance platform with an administrative dashboard for business operations and analytics.",
     },
     {
       title: "Pizza App",
@@ -52,13 +97,13 @@ const Projects = () => {
       description:
         "Built an e-commerce platform featuring secure JWT-based user authentication, advanced search, sorting, filtering, and a star rating system, which increased user engagement by 15%. Integrated multiple payment options, including Stripe, and optimized the checkout process, reducing cart abandonment by 20%.",
     },
-    {
-      title: "Movies App",
-      tools: ["ReactJs", "Bootstrap", "TMDB", "Axios", "Redux"],
-      role: "Frontend Developer",
-      description:
-        "Developed a movies app displaying popular movies with detailed information, including reviews, view counts, and more. Implemented search, pagination, and genre-based filtering to enhance user experience and streamline content discovery.",
-    },
+    // {
+    //   title: "Movies App",
+    //   tools: ["ReactJs", "Bootstrap", "TMDB", "Axios", "Redux"],
+    //   role: "Frontend Developer",
+    //   description:
+    //     "Developed a movies app displaying popular movies with detailed information, including reviews, view counts, and more. Implemented search, pagination, and genre-based filtering to enhance user experience and streamline content discovery.",
+    // },
   ];
 
   return (
